@@ -1,0 +1,49 @@
+body {
+  background-color: #0c0c0c;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  overflow: hidden;
+}
+
+.l-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+$sectionDuration: .5s;
+
+.section--is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transition: all $sectionDuration ease-in-out;
+}
+
+.section--next {
+  transition: all $sectionDuration ease-in-out;
+  opacity: 0;
+
+  &:not(.section--contacts) {
+    transform: translateY(-45px);
+  }
+}
+
+.section--prev {
+  transition: all $sectionDuration ease-in-out;
+  opacity: 0;
+
+  &:not(.section--contacts) {
+    transform: translateY(45px);
+  }
+}

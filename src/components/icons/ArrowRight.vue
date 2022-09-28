@@ -1,0 +1,23 @@
+<!-- eslint-disable vue/no-static-inline-styles -->
+<template>
+  <svg
+    width="24px"
+    height="24px"
+    viewBox="0 0 24 24"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+
+    <g
+      id="directional"
+      stroke="none"
+      stroke-width="1"
+      fill-rule="evenodd"
+    >
+      <g id="arrow-right">
+        <polygon id="Shape" points="9.0047481 4 17.0047481 12 9.0047481 20 7 18 13.0047481 12 7 6" />
+      </g>
+    </g>
+  </svg>
+</template>
