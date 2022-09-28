@@ -231,7 +231,7 @@ export default {
 
 @media (max-width: 600px) {
   .work-request--options label {
-    width: 150px;
+    width: 48%;
     margin-bottom: 15px;
     font-size: 14px;
   }
