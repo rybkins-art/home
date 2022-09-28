@@ -5,7 +5,7 @@
       href="#home"
       @click="setActiveSection('home')"
     >
-      <p>Dmitriy Rybkin</p>
+      <p>{{ $t('author') }}</p>
     </a>
     <div class="header--nav-toggle" @click="toggleContentMenu">
       <span />
