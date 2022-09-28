@@ -82,7 +82,7 @@ export default {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: $primary-light;
 }
 
 .work-request input[type="submit"] {
@@ -136,7 +136,7 @@ export default {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  border: 2px solid #fff;
+  border: 2px solid $primary-light;
   cursor: pointer;
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
   background-color: #CB1348;
@@ -150,7 +150,7 @@ export default {
 }
 
 .work-request--options label .icon svg {
-  fill: #fff;
+  fill: $primary-light;
   transition: width .2s ease-in-out;
 }
 
@@ -186,7 +186,7 @@ export default {
   padding: 0 0 5px 0;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $primary-light;
   border-radius: 0;
 }
 

@@ -251,7 +251,7 @@ export default {
 }
 
 .work--lockup .slider--item-center a {
-  color: #fff;
+  color: $primary-light;
 }
 
 .work--lockup .slider--item-center .slider--item-title {
@@ -280,7 +280,7 @@ export default {
 .work--lockup .slider--next svg,
 .work--lockup .slider--prev svg {
   width: 20px;
-  fill: #fff;
+  fill: $primary-light;
 }
 
 .work--lockup .slider--next {

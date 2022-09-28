@@ -220,15 +220,15 @@ th {
 }
 
 ::-moz-selection {
-  background: #FFF498;
+  background: $selection-color;
 }
 
 ::selection {
-  background: #FFF498;
+  background: $selection-color;
 }
 
 ::-moz-selection {
-  background: #FFF498;
+  background: $selection-color;
 }
 
 img::-moz-selection {

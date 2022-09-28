@@ -130,7 +130,7 @@ export default {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: $primary-light;
 }
 
 .device-notification--logo p {
@@ -214,7 +214,7 @@ export default {
   position: fixed;
   width: 30px;
   height: 30px;
-  fill: #FFF;
+  fill: $primary-light;
   bottom: 15px;
   left: 50%;
   margin-left: -15px;

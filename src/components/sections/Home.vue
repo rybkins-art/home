@@ -11,7 +11,7 @@
           <h3>Responsive & Adaptive</h3>
           <p>The task of the layout designer to make the site look the same on all devices</p>
         </a><a href="#0">
-          <h3>Javascript ES2016</h3>
+          <h3>Javascript ES6+</h3>
           <p>"A good programming language is a conceptual universe for thinking about programming" - Alan J.
             Perlis</p>
         </a><a href="#0">
@@ -58,7 +58,7 @@ export default {
   width: 100%;
   height: 300px;
   background: url(/assets/img/logo.svg) no-repeat center;
-  color: #FFF;
+  color: $primary-light;
   color: transparent;
   text-align: center;
   font-size: 20vmin;
@@ -134,7 +134,7 @@ export default {
   position: relative;
   left: 5px;
   width: 15px;
-  fill: #fff;
+  fill: $primary-light;
 }
 
 .intro--banner img {
@@ -159,7 +159,7 @@ export default {
 }
 
 .intro--options>a:hover {
-  color: #fff;
+  color: $primary-light;
 }
 
 .intro--options h3 {

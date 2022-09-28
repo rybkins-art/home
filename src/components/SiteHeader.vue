@@ -42,7 +42,7 @@ export default {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: $primary-light;
 }
 
 .header--logo p {
@@ -69,7 +69,7 @@ export default {
   position: relative;
   width: 16px;
   height: 2px;
-  background-color: #fff;
+  background-color: $primary-light;
 }
 
 .header--nav-toggle::before {
@@ -92,7 +92,7 @@ export default {
   padding: 0 20px;
   line-height: 30px;
   text-decoration: none;
-  color: #fff;
+  color: $primary-light;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #CB1348;

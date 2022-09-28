@@ -109,7 +109,7 @@ export default {
   display: block;
   margin: 14px 0;
   text-decoration: none;
-  color: #fff;
+  color: $primary-light;
   font-weight: 700;
 }
 
@@ -149,7 +149,7 @@ export default {
   width: 100%;
   padding: 8px 0;
   text-decoration: none;
-  color: #fff;
+  color: $primary-light;
   font-weight: 700;
 }
 

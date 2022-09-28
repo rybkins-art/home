@@ -76,7 +76,7 @@ export default {
 .side-nav>li {
   position: relative;
   top: -5px;
-  color: #fff;
+  color: $primary-light;
   font-size: 6px;
   cursor: pointer;
 }
@@ -85,7 +85,7 @@ export default {
   position: relative;
   top: 3px;
   left: 10px;
-  color: #fff;
+  color: $primary-light;
   font-size: 14px;
   font-weight: 300;
   opacity: 0;
@@ -144,7 +144,7 @@ export default {
 }
 
 .side-nav li.is-active::before {
-  color: #FFF;
+  color: $primary-light;
 }
 
 .side-nav li:not(.is-active)::before {
