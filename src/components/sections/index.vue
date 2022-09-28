@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       scrollTimeOutId: null,
-      touchStartPosX: 0,
+      touchStartPosY: 0,
       wheelDelta: null,
     };
   },
@@ -52,12 +52,14 @@ export default {
   },
 
   mounted() {
-    document.addEventListener('touchmove', this.onTouchmoveEvent);
+    document.addEventListener('touchstart', this.onTouchStartEvent);
+    document.addEventListener('touchend', this.onTouchEndEvent);
     document.addEventListener('wheel', this.onWheelEvent);
   },
 
   beforeUnmount() {
-    document.removeEventListener('touchmove', this.onTouchmoveEvent);
+    document.removeEventListener('touchstart', this.onTouchStartEvent);
+    document.removeEventListener('touchend', this.onTouchEndEvent);
     document.removeEventListener('wheel', this.onWheelEvent);
   },
 
@@ -80,18 +82,25 @@ export default {
       this.scrollContent(event.wheelDelta);
     },
 
-    onTouchmoveEvent(event) {
-      const currentPageX = Math.round(event.changedTouches[0].screenY);
-      if (this.touchStartPosX === currentPageX) {
+    onTouchStartEvent(event) {
+      this.touchStartPosY = Math.round(event.changedTouches[0].screenY);
+      console.info(this.touchStartPosY);
+    },
+
+    onTouchEndEvent(event) {
+      const currentPageY = Math.round(event.changedTouches[0].screenY);
+      console.info(currentPageY, this.touchStartPosY);
+      if (this.touchStartPosY === currentPageY) {
         return;
       }
 
-      if (this.touchStartPosX - currentPageX > 0) {
-        this.scrollContent({ wheelDelta: 1 });
+      console.info(this.touchStartPosY > currentPageY);
+
+      if (this.touchStartPosY > currentPageY) {
+        this.scrollContent(-1);
       } else {
-        this.scrollContent({ wheelDelta: -1 });
+        this.scrollContent(1);
       }
-      this.touchStartPosX = currentPageX;
     },
 
     getSecctionClass(section) {

@@ -1,6 +1,10 @@
 <template>
   <header class="header">
-    <a class="header--logo" href="#home">
+    <a
+      class="header--logo"
+      href="#home"
+      @click="setActiveSection('home')"
+    >
       <p>Dmitriy Rybkin</p>
     </a>
     <div class="header--nav-toggle" @click="toggleContentMenu">
@@ -16,7 +20,7 @@ export default {
   name: 'site-header',
 
   methods: {
-    ...mapMutations(['toggleContentMenu']),
+    ...mapMutations(['toggleContentMenu', 'setActiveSection']),
   },
 };
 </script>

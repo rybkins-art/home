@@ -29,7 +29,7 @@
             <site-header />
             <site-nav />
 
-            <arrow-down-icon />
+            <!-- <arrow-down-icon /> -->
 
             <sections />
           </div>
@@ -45,7 +45,7 @@
 import { mapMutations, mapState } from 'vuex';
 
 import Particles from './components/common/Particles.vue';
-import ArrowDownIcon from './components/icons/ArrowDown.vue';
+//import ArrowDownIcon from './components/icons/ArrowDown.vue';
 import OuterNav from './components/OuterNav.vue';
 import Sections from './components/sections/index.vue';
 import SiteHeader from './components/SiteHeader.vue';
@@ -62,7 +62,7 @@ export default {
     Sections,
 
     OuterNav,
-    ArrowDownIcon,
+    //ArrowDownIcon,
   },
 
   computed: {
@@ -108,7 +108,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100vh;
-
   box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
   overflow: hidden;
 }
@@ -120,25 +119,15 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-
-
   flex-direction: column;
-
-
   align-items: center;
-
-
   justify-content: center;
   background-color: #0c0c0c;
   z-index: 12;
 }
 
 .device-notification--logo {
-
-
   display: flex;
-
-
   align-items: center;
   text-decoration: none;
   color: #fff;
@@ -167,7 +156,6 @@ export default {
 
 .perspective--modalview {
   position: fixed;
-
   perspective: 1500px;
 }
 
@@ -197,24 +185,22 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-
   backface-visibility: hidden;
 }
 
 .effect-rotate-left .container {
-
-
   transform-origin: 0% 50%;
-
-
   transition: transform .4s;
   transition: transform .4s,
 }
 
 .effect-rotate-left--animate .container {
-
   transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   outline: 30px solid #CB1348;
+
+  @media (max-aspect-ratio: 16/9) {
+    transform: translateZ(-362px) translateX(-3%) rotateY(67deg)
+  }
 }
 
 .particle-js {
